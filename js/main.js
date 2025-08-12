@@ -403,7 +403,7 @@ function formatTime(totalSeconds) {
 async function getSongs(folder) {
     currFolder = folder;
     try {
-        const response = await fetch(`/${folder}/`);
+        const response = await fetch(`/Songs/${folder}/`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
